@@ -1,0 +1,37 @@
+{
+  "release": "Apple 1.0",
+  "artifact": {
+    "name": "CorridorKey-macOS-1.0.0.pkg",
+    "type": "github_release_asset",
+    "size_bytes": 1753309343,
+    "sha256": "897bb1dfe908335a36e6673556ce92ad8e5c8577c70e69b7530f7095803814f5",
+    "signed": false,
+    "notarized": false
+  },
+  "scope": "macOS Apple Silicon MLX; Autodesk Flame 2026.2.1; Blackmagic Design DaVinci Resolve Studio 21.0.0.48",
+  "host_gates": [
+    {
+      "host": "Autodesk Flame",
+      "version": "2026.2.1",
+      "result": "pass",
+      "checks": [
+        "scan_load",
+        "post_install_five_mode"
+      ],
+      "raw_evidence": "not_in_public_repository"
+    },
+    {
+      "host": "Blackmagic Design DaVinci Resolve Studio",
+      "version": "21.0.0.48",
+      "result": "pass",
+      "checks": [
+        "five_mode"
+      ],
+      "raw_evidence": "not_in_public_repository"
+    }
+  ],
+  "residual_risks": [
+    "Full PRD matrix remains broader than Apple 1.0 scope.",
+    "Unsigned and non-notarized distribution requires explicit SHA-256 verification and Gatekeeper instructions."
+  ]
+}

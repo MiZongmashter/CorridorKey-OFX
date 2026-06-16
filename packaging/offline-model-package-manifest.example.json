@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "model_id": "corridorkey-v1-green-example",
+  "version": "1.0-example",
+  "screen_color": "green",
+  "backend_compatibility": [
+    "torch_cpu"
+  ],
+  "local_path": "green-model.safetensors",
+  "expected_files": [
+    {
+      "path": "green-model.safetensors",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "source": {
+    "type": "example-only",
+    "upstream": "<user-supplied-model-source>",
+    "release_use": false,
+    "note": "Replace model_id, version, expected file names, and checksums with real offline package evidence before release."
+  }
+}
